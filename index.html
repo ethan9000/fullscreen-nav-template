@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Full Screen Nav Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <div class="nav">
+        <div class="logo-container">
+          <p>Logo Placeholder</p>
+        </div>
+        <div>
+          <button onclick="openMenu()" class="nav-button">
+            <span class="nav-stripe"></span>
+            <span class="nav-stripe"></span>
+            <span class="nav-stripe"></span>
+          </button>
+        </div>
+      </div>
+      <div id="menu" style="display: none">
+        <div class="links">
+          <a>Home</a>
+          <a>About</a>
+          <a>Services</a>
+          <a>Contact</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    //function to open or close the menu
+
+    function openMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("slide-out");
+    }
+  </script>
+</html>
